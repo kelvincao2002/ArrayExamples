@@ -24,6 +24,14 @@ class Main
         Scanner s = new Scanner(System.in);
         System.out.print(" Please type in an integer :");
         int n = s.nextInt();
+        int[] ar1;
+        ar1 = new int[n];
+       
+        for(int i=0; i<ar1.length; i++)
+        ar1[i]=i;
+        for(int i=0; i<ar1.length; i++)
+       
+         System.out.println("ar1["+i+"]="+ar1[i]);
         
         /*
          * Task 1.  Create an array of integers from 0 to n-1
