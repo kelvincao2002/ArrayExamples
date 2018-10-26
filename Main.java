@@ -232,18 +232,38 @@ class Main
 
          System.out.println("New ar4");
          for (int i=0 ; i<ar4.length ; i++);
-             System.out.println(ar4[i]);
+             System.out.println((ar4)+("[i]"));
         
         /*
          * Task 11.  Reverse the order of elements in ar2
          */
-        System.out.println("Task 11");
-        for (int i=0; i<ar2.length
+       System.out.println("** Task 11 **");
+        for (int i=0 ; i<ar2.length ; i++)
+            System.out.println("ar2["+i+"] = "+ar2[i]);
+            
+        int ar2half = ar2.length/2;
+        System.out.println(ar2half);
+        int task11Temp;
+        for (int i=0 ; i<ar2half ; i++)
+        {
+            task11Temp = ar2[i];
+            System.out.println(" "+i+":"+(ar2.length-i));
+            ar2[i] = ar2[ar2.length-1-i];
+            ar2[ar2.length-1-i]=task11Temp;
+        }
+               
+        for (int i=0 ; i<ar2.length ; i++)
+            System.out.println("ar2["+i+"] = "+ar2[i]);
+        
+        
+ 
+
+
         
         /*
          * Task 12: 
          * Create an array of Strings called ar5.
-         * 
+         
          * Each element is a word of the following phrase
          * 
          * 
@@ -263,7 +283,26 @@ class Main
          *  
          *  Count how many words have more than 5 letters.
          */
-        
+        String[] ar5=new String[n];
+        for(n=0; n<=15;n++);
+        System.out.println(ar5[n]);
+                    ar5[0]="Four ";
+                    ar5[1]="score";
+                    ar5[2]="and";
+                    ar5[3]="seven";
+                    ar5[4]="years"; 
+                    ar5[5]="ago";
+                    ar5[6]="our";
+                    ar5[7]="fathers";
+                    ar5[8]="brought";
+                    ar5[9]="forth";
+                    ar5[10]="on";
+                    ar5[11]=" this";
+                    ar5[12]="continent";
+                    ar5[13]="a";
+                    ar5[14]="new";
+                    ar5[15]="nation";
+               if 
         /*
          * Task 13
          * Create an array called monsterArray of 5 Monsters.
