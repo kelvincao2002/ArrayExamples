@@ -283,26 +283,57 @@ class Main
          *  
          *  Count how many words have more than 5 letters.
          */
-        String[] ar5=new String[n];
-        for(n=0; n<=15;n++);
-        System.out.println(ar5[n]);
-                    ar5[0]="Four ";
-                    ar5[1]="score";
-                    ar5[2]="and";
-                    ar5[3]="seven";
-                    ar5[4]="years"; 
-                    ar5[5]="ago";
-                    ar5[6]="our";
-                    ar5[7]="fathers";
-                    ar5[8]="brought";
-                    ar5[9]="forth";
-                    ar5[10]="on";
-                    ar5[11]=" this";
-                    ar5[12]="continent";
-                    ar5[13]="a";
-                    ar5[14]="new";
-                    ar5[15]="nation";
-               if 
+        String[] ar5=new String[16];
+ ar5[0]="Four";
+ ar5[1]="score";
+ ar5[2]="and";
+ ar5[3]="seven";
+ ar5[4]="years";
+ ar5[5]="ago";
+ ar5[6]="our";
+ ar5[7]="fathers";
+ ar5[8]="brought";
+ ar5[9]="forth";
+ ar5[10]="on";
+ ar5[11]="this";
+ ar5[12]="continent";
+ ar5[13]="a";
+ ar5[14]="new";
+ ar5[15]="nation";
+int count5=0;
+ 
+ for (int i=0 ; i<ar5.length ; i++)
+ {
+ // ar5[i] is a String object
+ // ar5[2] is "and"
+ // ar5[2].length() is 3.
+ 
+     if (ar5[i].length()>5)
+         count5++;
+ }
+ 
+ System.out.println(" TASK 12: is " + count5);
+ /*
+ * Boss Level Task 12. Create an array with just words
+ * of length greater than 5
+ */
+ k=0; // previously defined
+ String[] task12Greater= new String[count5];
+ for (int i=0 ; i<ar5.length ; i++)
+ {
+     if (ar5[i].length() >5)
+     {
+         task12Greater[k]=ar5[i];
+         k++;
+     }
+ }
+ 
+ for (int i=0 ; i<task12Greater.length ; i++)
+ {
+     System.out.println(" 12 BOSS["+i+"] :"+task12Greater[i]);
+ }
+ 
+ 
         /*
          * Task 13
          * Create an array called monsterArray of 5 Monsters.
